@@ -10,8 +10,8 @@ function App() {
     <>
       <React.Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route index path="/" element={<Invoice />} />
-          <Route path="/signin" element={<Login />} />
+          <Route index path="/home" element={<Invoice />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Register />} />
         </Routes>
       </React.Suspense>

@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col lg:flex-row min-h-screen m-auto">
       {/* Left Side (Form) */}
@@ -48,6 +50,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
+            onClick={() => navigate("/home")}
             className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
           >
             Login
